@@ -1,0 +1,42 @@
+body{
+    background-color: white;
+    color: black;
+}
+
+.priser{
+    background-color: #A6C6FF;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 114px;
+    height: 144px;
+    border-radius: 25%;
+    text-align: center;
+}
+
+.Månedlig{
+    background-color: #92C2B3;
+    margin-right: 140px;
+    margin-left: 140px;
+    border-radius: 25%;
+    text-align: center;
+}
+
+.halvårligt{
+    background-color: #92C2B3;
+    margin-right: 140px;
+    margin-left: 140px;
+    border-radius: 25%;
+    text-align: center;
+}
+
+.årligt{
+    background-color: #92C2B3;
+    margin-right: 140px;
+    margin-left: 140px;
+    border-radius: 25%;
+    text-align: center;
+}
+
+.MT{
+    background-color: #A6C6FF;
+}
