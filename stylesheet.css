@@ -1,0 +1,267 @@
+:root {
+
+  /*
+  ** Variabler til baggrundsfarver
+  */
+  --header-bgg-color: #ffffff;
+  --body-bgg-color: #ffffff;
+  --footer-bgg-color: #F2D5D5;
+  --mobile-ul-bgg-color: #ffffff;
+
+  /*
+  ** Variabler specifikt til sektioner
+  */
+  --section-bgg-color1: #F2D5D5;
+  --section-bgg-color2: #ABC6FD;
+  --section-bgg-color3: #92C2B3;
+  --section-bgg-color4: #F1C44B;
+
+  /*
+  ** Variabler til andre farver
+  */
+  --txt-color: rgb(0, 0, 0);
+
+  /*
+  ** Variabler til default
+  ** padding og margins
+  */
+  --default-page-padding: 20px;
+  --default-page-margin: 20px;
+
+}
+
+
+* {
+  /* Ændre på hvordan højde og bredde beregnes */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--body-bgg-color);
+}
+
+h1 {
+  text-align: center;
+}
+
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-header .container {
+  color: var(--txt-color);
+  padding: 10px;
+  background-color: var(--header-bgg-color);
+  height: 60px;
+}
+
+.main-header .container .resizer {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.main-header .logo-container {
+  display: flex;
+}
+
+.main-header .logo-container h1 {
+  font-family: 'Gabriela', serif;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 11px;
+  margin-left: 19px;
+  width: 150px;
+}
+
+.main-header nav .btn-mobile {
+  height: 100%;
+  width: 45px;
+  background: none;
+  border: none;
+  font-size: 29px;
+  cursor: pointer;
+  color: var(--txt-color);
+}
+
+.main-header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: var(--default-page-padding);
+  display: none;
+}
+
+.main-header nav ul.show {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 150px;
+  background: var(--mobile-ul-bgg-color);
+}
+
+.main-header nav ul.show .mobile-li button,
+.main-header nav ul.show li a {
+  font-size: 20px;
+  padding: 10px 0 10px 0;
+  display: block;
+  border-bottom: 5px solid var(--horizontal-line-color);
+  font-family: 'Source Serif Pro', serif;
+
+}
+
+.main-header nav ul.show .mobile-li button {
+  text-align: left;
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.main-header nav ul li a {
+  text-decoration: none;
+}
+
+.main-header .single-img {
+  margin: var(--default-page-margin);
+}
+
+.main-header .single-img img {
+  width: 100%;
+}
+
+
+.flex-section img,
+.single-section img {
+  border-radius: 3px;
+  max-width: 100%;
+}
+
+.single-section,
+.flex-section {
+  margin: var(--default-page-margin);
+  color: var(--txt-color);
+}
+
+.single-section h2,
+.flex-section h2 {
+  font-family: 'Source Serif Pro', serif;
+  margin: 0;
+}
+
+.single-section .container,
+.flex-section .flex-header,
+.flex-section section{
+  background-color: var(--section-bgg-color1);
+  padding: var(--default-page-padding);
+  margin-bottom: var(--default-page-margin);
+  border-radius: 3px;
+}
+
+.single-section .container,
+.flex-section .flex-header {
+  margin-top: var(--default-page-margin);
+}
+
+
+.main-footer {
+  color: var(--txt-color);
+  background-color: var(--footer-bgg-color);
+  text-align: center;
+  padding: 21px;
+  height: 180px;
+  margin-top: var(--default-page-margin);
+}
+
+
+.my-form{
+	padding: 20px;
+  text-align: center;
+}
+
+.my-form .form-group{
+	padding-bottom: 5px;
+
+}
+.my-form label{
+	display: block;
+
+}
+
+.button {
+  background-color: #ffffff; 
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  margin-top: 10px;
+  
+}
+
+.flex-box section{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  background-color: var(--section-bgg-color2);
+  border-radius: 3px;
+  margin: var(--default-page-margin);
+}
+
+/*
+** Media queries
+*/
+
+@media screen and (min-width: 720px) {
+  .main-header nav ul,
+  .main-header nav ul.show {
+    position: inherit;
+    background: none;
+    border: none;
+    width: auto;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .main-header nav .btn-mobile,
+  .main-header nav ul .mobile-li,
+  .main-header nav ul.show .mobile-li {
+    display: none;
+  }
+
+  .main-header nav ul.show li a,
+  .main-header nav ul li a {
+    padding: 12px;
+    height: 40px;
+    display: block;
+    background: transparent;
+    color: var(--txt-color);
+    font-family: 'Source Serif Pro', serif;
+    border: none;
+    font-size: 14px;
+  }
+
+  .flex-section .flex-container {
+    display: flex;
+    gap: var(--default-page-margin);
+  }
+
+  .flex-box, .box1, .box2, .box3, .box4{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+  }
+
+  .main-header .container .resizer,
+  .single-section,
+  .flex-section,
+  .main-header .single-img, 
+  .flex-box {
+    max-width: 900px;
+    margin: auto;
+  }
+
+}
