@@ -3,27 +3,43 @@
 <head>
     <meta charset="utf-8">
     <link href="Minside.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> LivsLæring </title>
 </head>
 
     <body>
 
-        <header class="header">
-
-        <div>
-            <a href="#"><img src="img/LOGOOO.png" class="logo" alt="logo"></a>
-        </div>
-
-        <nav class="main-nav">
-            <a href="index.html">Forside</a>
-            <a href="index.html"> Emner <a>
-            <a href="index.html"> Om os<a>
-            <a href="index.html"> Min side</a>
-        </nav>
-    </header>
-
+        <header class="main-header">
+            <div class="container">
+              <div class="resizer">
+                <div class="logo-container">
+                    <img src="/img/LOGOOOOOOOO.png" class="logo" alt="logo">
+                </div>
+      
+                <nav>
+                  <!--
+                    På knappen herunder bruges onclick attribute til at kalde
+                    en javascript funktion, hvis navn er angivet mellem "",
+                    når der klikkes på knappen.
+                    Kilde: https://www.w3schools.com/jsref/event_onclick.asp
+                  -->
+                  <ul id="main-header-ul">
+                    <li><a href="./index.html">Forside</a></li>
+                    <li><a href="./emner.html">Emner</a></li>
+                    <li><a href="./tilmeld.html">Tilmeld</a></li>
+                    <li><a href="./omos.html">Om os</a></li>
+                    <li><a href="./Minside.html">Min Side</a></li>
+                    <li class="mobile-li"><button onclick="toggleMobile()">Luk menu</button></li>
+                  </ul>
+                </nav>
+                <button class="btn-mobile" onclick="toggleMobile()">☰</button>
+              </div>
+            </div>
+          </header>
         <main>
             <h2> Velkommen tilbage Steen!</h2>
+
             <section class="btn"> 
                 <a href="#"> <img src="img/Icon feather-bell.png" alt="klokke"></a>
                 <a href="#"> <img src="img/Icon feather-message-circle.png" alt="taleboble"></a>
@@ -33,7 +49,7 @@
 
             <section> 
                 <div class="month">      
-                    <ul>
+                    <ul class="kal">
                       <li class="prev">&#10094;</li>
                       <li class="next">&#10095;</li>
                       <li>
@@ -109,8 +125,12 @@
         </main>
     
     <footer>
-        <p>Her er footeren</p>
+        <h4>Kontakt</h4>
+      <p>Telf: 46474738</p>
+      <p>Adresse: Køgevej 23, 3029</p>
+      <p>Mail: livslæring@info.dk</p>
     </footer>
+    <script src="./burgermenu.js"></script>
 
     </body>
 
