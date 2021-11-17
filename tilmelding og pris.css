@@ -39,4 +39,18 @@ body{
 
 .MT{
     background-color: #A6C6FF;
+    border-radius: 25px;
+    height: 97px;
+}
+
+.HT{
+    background-color: #A6C6FF;
+    border-radius: 25px;
+    height: 97px;
+}
+
+.ÅT{
+    background-color: #A6C6FF;
+    border-radius: 25pt;
+    height: 97px;
 }
