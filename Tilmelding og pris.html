@@ -6,43 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tilmelding</title>
     <link rel="stylesheet" href="tilmelding og pris.css" type="text/css">
+    <script src="./burgermenu.js"></script>
 </head>
 <body>
     <main>
-        <header>
-            <nav>
-
-            </nav>
+        <header class="main-header">
+            <div class="container">
+              <div class="resizer">
+                <div class="logo-container">
+                  <img src="./logo.png" alt="logo">
+                </div>
+      
+                <nav>
+                  <!--
+                    På knappen herunder bruges onclick attribute til at kalde
+                    en javascript funktion, hvis navn er angivet mellem "",
+                    når der klikkes på knappen.
+                    Kilde: https://www.w3schools.com/jsref/event_onclick.asp
+                  -->
+                  <button class="btn-mobile" onclick="toggleMobile()">☰</button>
+                  <ul id="main-header-ul">
+                    <li><a href="./index.html">Forside</a></li>
+                    <li><a href="./emner.html">Emner</a></li>
+                    <li><a href="./tilmeld.html">Tilmeld</a></li>
+                    <li><a href="./omos.html">Om os</a></li>
+                    <li><a href="./login.html">Log in</a></li>
+                    <li class="mobile-li"><button onclick="toggleMobile()">Luk menu</button></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+        </header>
 
             <section class="priser">
-               <h1>Priser</h2> 
+               <h1>Priser</h1> 
             </section>
-            
+        <div class="prices-flex-container">
             <section class="Månedlig">
                 <h3>Månedligt</h3>
-                <p>4 lektioner</p>
-                <p>2*45 min/uger </p>
-                <p>349,-</p>
+                <p>4 lektioner <br> 2*45 min/uger</p>
+                <p class="PM">349,-</p>
                 <a href="#" class="MT">Tilmeld</a>
             </section>
 
             <section class="halvårligt">
                 <h3>Halvårligt</h3>
-                <p>24 lektioner</p>
-                <p>2*45 min/uge</p>
-                <p>1700,-</p>
+                <p>24 lektioner <br> 2*45 min/uge</p>
+                <p class="PH">1700,-</p>
                 <a href="#" class="HT">Tilmeld</a> 
             </section>
 
             <section class="årligt">
                 <h3>Årligt</h3>
-                <p>48 lektioner</p>
-                <p>2'45 min/uger</p>
-                <p>3000,-</p>
+                <p>48 lektioner <br>2*45 min/uge</p>
+                <p class="PÅ">3000,-</p>
                 <a href="#" class="ÅT">Tilmeld</a>
             </section>
 
-        </header>
+        </div>
+        
+        <footer class="main-footer">
+              <h4>Kontakt</h4>
+              <p>Telf: 46474738</p>
+              <p>Adresse: Køgevej 23, 3029</p>
+              <p>Mail: livslæring@info.dk</p>
+            </footer>
     </main>    
 </body>
 </html>
