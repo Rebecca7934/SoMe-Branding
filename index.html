@@ -1,120 +1,131 @@
 <!DOCTYPE html>
 <html lang="da" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Læring</title>
-    <link rel="stylesheet" href="./stylesheet.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Montserrat&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Læring</title>
+  <link rel="stylesheet" href="./stylesheet.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabriela&family=Montserrat&family=Source+Serif+Pro:wght@600&display=swap"
+    rel="stylesheet">
 
-    <script src="./burgermenu.js"></script>
-  </head>
-  <body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
 
-    <header class="main-header">
-      <div class="container">
-        <div class="resizer">
-          <div class="logo-container">
-            <img src="img/logo.png" alt="logo">
-          </div>
+  <script src="./burgermenu.js"></script>
+</head>
 
-          <nav>
-            <!--
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <div class="resizer">
+        <div class="logo-container">
+          <img src="img/logo.png" alt="logo">
+        </div>
+
+        <nav>
+          <!--
               På knappen herunder bruges onclick attribute til at kalde
               en javascript funktion, hvis navn er angivet mellem "",
               når der klikkes på knappen.
               Kilde: https://www.w3schools.com/jsref/event_onclick.asp
             -->
-            <button class="btn-mobile" onclick="toggleMobile()">☰</button>
-            <ul id="main-header-ul">
-              <li><a href="./index.html">Forside</a></li>
-              <li><a href="./emner.html">Emner</a></li>
-              <li><a href="./tilmeld.html">Tilmeld</a></li>
-              <li><a href="./omos.html">Om os</a></li>
-              <li><a href="./minside.html">Min side</a></li>
-              <li class="mobile-li"><button onclick="toggleMobile()">Luk menu</button></li>
-            </ul>
-          </nav>
-        </div>
+          <button class="btn-mobile" onclick="toggleMobile()">☰</button>
+          <ul id="main-header-ul">
+            <li><a href="./index.html">Forside</a></li>
+            <li><a href="./emner.html">Emner</a></li>
+            <li><a href="./tilmeld.html">Tilmeld</a></li>
+            <li><a href="./omos.html">Om os</a></li>
+            <li><a href="./minside.html">Min side</a></li>
+            <li class="mobile-li"><button onclick="toggleMobile()">Luk menu</button></li>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <section class="intro-section">
-      <div class="container">
-        <div>
-          <h2>Klæd dit barn på til den virkelige verden med LivsLæring</h2>
+  <section class="intro-section">
+    <div class="container">
+      <div>
+        <h2>Klæd dit barn på til den virkelige verden med LivsLæring</h2>
         <p>
-          Hos LivsLæring tilbyder vi online lektioner som udvikler barnets handlekompetence i relation til seksualitet, trivsel, rettigheder, sundhed og bidrage til øget anerkendelse af mangfoldighed og bekæmpelse af diskrimination. De vil samtidig lære om brugbare informationer om bl.a. klima, økonomi og sociale medier. 
+          Hos LivsLæring tilbyder vi online lektioner som udvikler barnets handlekompetence i relation til seksualitet,
+          trivsel, rettigheder, sundhed og bidrage til øget anerkendelse af mangfoldighed og bekæmpelse af
+          diskrimination. De vil samtidig lære om brugbare informationer om bl.a. klima, økonomi og sociale medier.
         </p>
-        </div>
-        <div class="single-img">
-          <img src="./img/school1.jpeg"
-           alt="intro billede">
-        </div>
       </div>
-    </section>
-
-    <section class="flex-section">
-      <div class="flex-box">
-        <section class="box1">
-          <div>
-            <h3>Online undervisning</h3>
-          </div>
-          <p>
-            Fordelene ved online undervisning er, at det er flixibelt i forhold til tid og sted, så det kan tilpasses til jeres hverdag. Børnene kan også føle sig bedre tilpas når der bliver snakket om sarte emner, når de ikke skal gøre det fyssisk foran andre. Eleverne har desuden mulighed for at stile spørgsmål parallelt med undervisningen og gøre det anonymt.
-          </p>
-        </section>
-
-        <section class="box2">
-          <div>
-            <h3>Hør fra vores elever</h3>
-          </div>
-          <p>
-            Hør citater fra nogle af vores elever samt deres forældre, og hør hvordan deres oplevelse med LivsLæring har været og hvad de har fået ud af det. 
-          </p>
-          
-        </section>
+      <div class="single-img">
+        <img src="./img/school1.jpeg" alt="intro billede">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="flex-section">
-      <div class="flex-box">
-        <section class="box3">
-          <div>
-            <h3>Events</h3>
-          </div>
-          <p>
-            Hos LivsLæring holder vi flere arrangementer. Vi holder pop-up workshops, mød din klasse, udflugter og meget mere. 
-          </p>
-        </section>
-
-        <section class="box4">
-            <div>
-              <h3>FAQ</h3>
-            </div>
-            <p>
-            Har du spørgsmål til os så kontakt os gerne, elller kig på vores FAQ side. Vi står altid klar til at hjælpe, via vores hjemmeside, facebook eller instagram. 
-            </p>
-          </section>
+  <section class="flex-section">
+    <div class="flex-box">
+      <section class="box1">
+        <div>
+          <h3>Online undervisning</h3>
         </div>
-    </section>
+        <p>
+          Fordelene ved online undervisning er, at det er flixibelt i forhold til tid og sted, så det kan tilpasses til
+          jeres hverdag. Børnene kan også føle sig bedre tilpas når der bliver snakket om sarte emner, når de ikke skal
+          gøre det fyssisk foran andre. Eleverne har desuden mulighed for at stile spørgsmål parallelt med
+          undervisningen og gøre det anonymt.
+        </p>
+      </section>
 
-    <section class="flex-section">
-      <img src="./img/school3.jpeg" class="single-img-w-border"
-       alt="schoolpic3">
-    </section>
+      <section class="box2">
+        <div>
+          <h3>Hør fra vores elever</h3>
+        </div>
+        <p>
+          Hør citater fra nogle af vores elever samt deres forældre, og hør hvordan deres oplevelse med LivsLæring har
+          været og hvad de har fået ud af det.
+        </p>
 
-    <footer class="main-footer">
-      <h4>Kontakt</h4>
-      <p>Telf: 46474738</p>
-      <p>Adresse: Køgevej 23, 3029</p>
-      <p>Mail: livslæring@info.dk</p>
-    </footer>
+      </section>
+    </div>
+  </section>
 
-  </body>
+  <section class="flex-section">
+    <div class="flex-box">
+      <section class="box3">
+        <div>
+          <h3>Events</h3>
+        </div>
+        <p>
+          Hos LivsLæring holder vi flere arrangementer. Vi holder pop-up workshops, mød din klasse, udflugter og meget
+          mere.
+        </p>
+      </section>
+
+      <section class="box4">
+        <div>
+          <h3>FAQ</h3>
+        </div>
+        <p>
+          Har du spørgsmål til os så kontakt os gerne, elller kig på vores FAQ side. Vi står altid klar til at hjælpe,
+          via vores hjemmeside, facebook eller instagram.
+        </p>
+      </section>
+    </div>
+  </section>
+
+  <section class="flex-section">
+    <img src="./img/school3.jpeg" class="single-img-w-border" alt="schoolpic3">
+  </section>
+
+  <footer class="main-footer">
+    <h4>Kontakt</h4>
+    <p>Telf: 46474738</p>
+    <p>Adresse: Køgevej 23, 3029</p>
+    <p>Mail: livslæring@info.dk</p>
+  </footer>
+
+</body>
+
 </html>
