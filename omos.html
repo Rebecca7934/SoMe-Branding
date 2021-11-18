@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <title>LivsLæring</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="omos.css">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icone" />
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="resizer">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+
+                <nav>
+                    <!--
+                På knappen herunder bruges onclick attribute til at kalde
+                en javascript funktion, hvis navn er angivet mellem "",
+                når der klikkes på knappen.
+                Kilde: https://www.w3schools.com/jsref/event_onclick.asp
+              -->
+                    <button class="btn-mobile" onclick="toggleMobile()">☰</button>
+                    <ul id="main-header-ul">
+                        <li><a href="./index.html">Forside</a></li>
+                        <li><a href="./emner.html">Emner</a></li>
+                        <li><a href="./tilmeld.html">Tilmeld</a></li>
+                        <li><a href="./omos.html">Om os</a></li>
+                        <li><a href="./minside.html">Min side</a></li>
+                        <li class="mobile-li"><button onclick="toggleMobile()">Luk menu</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+
+        <section class="Om">
+            <div class="kasse">
+                <h1>Om os</h1>
+                <p>
+                    Hos Livslæring kan dit barn lærer om de forskellige emner som man ikke tulbydes i folkeskolen. Det
+                    kan
+                    f.eks. være om ens seksualitet, økonomi. følelser og klima osv. <br>
+
+                    Vi tror på at et velforberedt framtidig voksen vil give et bedre samfund for os alle. Derfor
+                    tilbyder vi undervisning i disse vigitge emner se nerme om emnerne under fanen "emner"
+                    du kan se vores priser og tilmelde dit barn hurtigt om nemt under fanen "tilmeld" <br>
+
+                    Vi har et prøveprogram, hvor dit barn kan komme og prøve en prøvetime for at se om det er noget for
+                    barnet. <br>
+
+                    Hvis du har spørgsmål er du velkommen til at kontkate vores kundeservice.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Mød vores lærer</h3>
+        </section>
+        <section class="flex">
+            <section class="box">
+                <img src="img/Lars.jpg" alt="img">
+                <h3>Lars, 45 år</h3>
+                <p>
+                    Lars er økonomi lærer, han underviser i økonomi
+                </p>
+            </section>
+
+            <section class="box">
+                <div>
+                    <img src="img/Amalie.jpg" alt="img">
+                    <h3>Amalie, 27 år</h3>
+                </div>
+                <p>
+                    Amalie er SoMe lærer, hun underviser i Sociale Medier
+                </p>
+            </section>
+
+            <section class="box">
+                <div>
+                    <img src="img/Lone.jpg" alt="img">
+                    <h3>Lone, 43 år</h3>
+                </div>
+                <p>
+                    Lone er psykolog, hun underviser i kærlighed og følelser
+                </p>
+            </section>
+
+            <section class="box">
+                <div>
+                    <img src="img/Jon.jpg" alt="img">
+                    <h3>Jon, 34 år</h3>
+                </div>
+                <p>
+                    Jon er natur og teknik lærer, han underviser i klima og miljø
+                </p>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <h4>Kontakt</h4>
+        <p>Telf: 46474738</p>
+        <p>Adresse: Køgevej 23, 3029</p>
+        <p>Mail: livslæring@info.dk</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <!--her definers sproget-->
 <html lang="da">
-    
+
 <head>
-<!--her forbindes Html med css-->
-    <link rel="stylesheet" href="emne.css">
-<!--titlen på websiden som vises på fanebladdet-->
+    <!--her forbindes Html med css-->
+    <link rel="stylesheet" href="emner.css">
+    <!--titlen på websiden som vises på fanebladdet-->
     <title>...</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icone" />
 </head>
 
 <body>
-    <nav>
+    <header class="main-header">
+        <div class="container">
+            <div class="resizer">
+                <div class="logo-container">
+                    <img src="img/logo.png" alt="logo">
+                </div>
 
-    </nav>
+                <nav>
+                    <!--
+                På knappen herunder bruges onclick attribute til at kalde
+                en javascript funktion, hvis navn er angivet mellem "",
+                når der klikkes på knappen.
+                Kilde: https://www.w3schools.com/jsref/event_onclick.asp
+              -->
+                    <button class="btn-mobile" onclick="toggleMobile()">☰</button>
+                    <ul id="main-header-ul">
+                        <li><a href="./index.html">Forside</a></li>
+                        <li><a href="./emner.html">Emner</a></li>
+                        <li><a href="./tilmeld.html">Tilmeld</a></li>
+                        <li><a href="./omos.html">Om os</a></li>
+                        <li><a href="./minside.html">Min side</a></li>
+                        <li class="mobile-li"><button onclick="toggleMobile()">Luk menu</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-<!--
+    </header>
+
+    <!--
 <section>
     <div class="container">
         <div class="box"></div>
@@ -26,60 +52,89 @@
 </section>
 -->
 
+    <section class="flex-header">
+        <h2>Emner</h2>
+        <p>Undervisningen handler især om sundhed, identitet, pubertet, køn, følelser og familier. Derudover sætter vi
+            fokus på rettigheder på de sociale medier samt på at styrke elevernes evner til at sætte grænser og mærke
+            andres grænser og at få kendskab til egne og andres rettigheder. </p>
+    </section>
+
     <section>
 
         <section class="flex-container">
-            <div class="blue1">
-                <h1>Kærlighed</h1>
-                <p>...</p>
-            </div>
-            
-            <div class="grøn2">
-                <h1>Krop</h1>
-                <p>...</p>
-            </div>
-            
-            <div class="gul3">
-                <h1>Grænser og samtykke</h1>
-                <p>...</p>
-            </div> 
-            
-            <div class="rød4">
-                <h1>Sociale medier</h1>
-                <p>...</p>
-            </div>
-            
-            <div class="grøn5">
-                <h1>Køn og seksualitet</h1>
-                <p>...</p>
-            </div>
-            
-            <div class="gul6">
-                <h1>Økonomi</h1>
-                <p>...</p>
-            </div> 
-            
-            <div class="rød7">
-                <h1>Følelser</h1>
-                <p>...</p>
-            </div>
-            
-            <div class="blue8">
-                <h1>Klima/miljø</h1>
-                <p>...</p>
-            </div>
-            
-            <div class="gul9">
-                <h1>mental sundhed</h1>
-                <p>...</p>
-            </div> 
-            
-            <div class="grøn10">
-                <h1>seksualundervisning </h1>
-                <p>...</p>
-            </div>
+            <section class="flex-section">
+                <div class="box1">
+                    <h3>Kærlighed</h3>
+                    <p>Dette emne omhanlder hvornår man elsker, og hvad vil det sige at elske, hvornår rammer kærlighed,
+                        og hvordan passer man på andres følelser.</p>
+                </div>
+
+                <div class="box2">
+                    <h3>Krop</h3>
+                    <p>Dette læringforløb har til formål at udvikle elevernes viden om kroppens funktioner og kroppens
+                        mangfoldighed. Derudover ønkser vi at styrke elevernes indsigt i samspillet mellem krop og
+                        trivsel.</p>
+                </div>
+
+                <div class="box3">
+                    <h3>Grænser og samtykke</h3>
+                    <p>I dette emne tager vi fat i personlige grænser og samtykke, Emnet vil styrke eleverne i at mærke
+                        egen og andres grænser og respektere dem. </p>
+                </div>
+            </section>
+            <section class="flex-section">
+                <div class="box4">
+                    <h3>Sociale medier</h3>
+                    <p>Med dette emne ønsker vi at lære eleverne hvordan man skal omgå sig på de sociale medier. Med
+                        dette emne vil børnene blive mere reflekterende og kritiske brugere af sociale medier. </p>
+                </div>
+
+                <div class="box5">
+                    <h3>Køn og seksualitet</h3>
+                    <p>Dette emne hander om køn og seksualitet. Det er vigtigt at høre dette fra en tidlig alder. De vil
+                        lære hvilke roller køn og seksualitet har eller kan have i samfundet og hvordan man snakker om
+                        det med andre</p>
+                </div>
+
+                <div class="box6">
+                    <h3>Økonomi</h3>
+                    <p>Dette emne vil hjælpe børnene med at have bedre forudsætning for at have styr på fx. privat
+                        økonomi i fremtiden.</p>
+                </div>
+            </section>
+            <section class="flex-section">
+                <div class="box7">
+                    <h3>Følelser</h3>
+                    <p>Dette emne tager fat i følelser og den betyder følelser har for oplevelsen af sundhed og trivsel.
+                        formålet med emnet er at udvikle elevernes evner til at genkende, aflæse og reagere på følelser
+                        hos sig selv og andre. Det er vigtigt at huske at følelser kan være mange ting.</p>
+                </div>
+
+                <div class="box8">
+                    <h3>Klima/miljø</h3>
+                    <p>Dette emne omhander årsager, konsekvenser og forbyggelse af klimafornadringer.</p>
+                </div>
+
+                <div class="box9">
+                    <h3>mental sundhed</h3>
+                    <p>Dette emne hender om den mentale sundhed som spiller en stor rolle ude i samfundet i alle aldre.
+                    </p>
+                </div>
+
+                <div class="box10">
+                    <h3>seksualundervisning </h3>
+                    <p>Dette emne tager fat i emnet sex, prevention og realationer. </p>
+                </div>
+            </section>
         </section>
-    
+
     </section>
+
+    <footer>
+        <h4>Kontakt</h4>
+        <p>Telf: 46474738</p>
+        <p>Adresse: Køgevej 23, 3029</p>
+        <p>Mail: livslæring@info.dk</p>
+    </footer>
 
 </body>
