@@ -1,0 +1,285 @@
+:root {
+
+    /*
+    ** Variabler til baggrundsfarver
+    */
+    --header-bgg-color: #ffffff;
+    --body-bgg-color: #ffffff;
+    --footer-bgg-color: #F2D5D5;
+    --mobile-ul-bgg-color: #ffffff;
+  
+    /*
+    ** Variabler specifikt til sektioner
+    */
+    --section-bgg-color1: #F2D5D5;
+    --section-bgg-color2: #ABC6FD;
+    --section-bgg-color3: #92C2B3;
+    --section-bgg-color4: #F1C44B;
+  
+    /*
+    ** Variabler til andre farver
+    */
+    --txt-color: rgb(0, 0, 0);
+  
+  }
+  
+body{
+    margin: 0px;
+
+}
+
+img{
+    height: 69px;
+}
+
+h3{
+    margin-left: 10px;
+}
+p{
+    margin-bottom: 40px;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 1px;
+}
+
+.main-footer {
+    color: var(--txt-color);
+    background-color: var(--footer-bgg-color);
+    text-align: center;
+    padding: 21px;
+    height: 180px;
+    margin-top: 20;
+  }
+
+
+
+.main-header .container {
+    color: var(--txt-color);
+    padding: 10px;
+    background-color: var(--header-bgg-color);
+    height: 60px;
+  }
+  
+  .main-header .container .resizer {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+  }
+  
+  .main-header .logo-container {
+    display: flex;
+  }
+  
+  .main-header .logo-container h1 {
+    font-family: 'Gabriela', serif;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 11px;
+    margin-left: 19px;
+    width: 150px;
+  }
+  
+  .main-header nav .btn-mobile {
+    height: 100%;
+    width: 45px;
+    background: none;
+    border: none;
+    font-size: 29px;
+    cursor: pointer;
+    color: var(--txt-color);
+  }
+  
+  .main-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: var(--default-page-padding);
+    display: none;
+  }
+  
+  .main-header nav ul.show {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 150px;
+    background: var(--mobile-ul-bgg-color);
+  }
+  
+  .main-header nav ul.show .mobile-li button,
+  .main-header nav ul.show li a {
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+    display: block;
+    border-bottom: 5px solid var(--horizontal-line-color);
+    font-family: 'Source Serif Pro', serif;
+  
+  }
+  
+  .main-header nav ul.show .mobile-li button {
+    text-align: left;
+    background: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .main-header nav ul li a {
+    text-decoration: none;
+  }
+
+
+@media screen and (min-width: 720px) {
+    .main-header nav ul,
+    .main-header nav ul.show {
+      position: inherit;
+      background: none;
+      border: none;
+      width: auto;
+      display: flex;
+      gap: 10px;
+      padding: 0;
+    }
+  
+    .main-header nav .btn-mobile,
+    .main-header nav ul .mobile-li,
+    .main-header nav ul.show .mobile-li {
+      display: none;
+    }
+  
+    .main-header nav ul.show li a,
+    .main-header nav ul li a {
+      padding: 12px;
+      height: 40px;
+      display: block;
+      background: transparent;
+      color: var(--txt-color);
+      font-family: 'Source Serif Pro', serif;
+      border: none;
+      font-size: 14px;
+    }
+
+    .main-header .container .resizer,
+    .main-header .flex .flex-container{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.flex-container .blue1{
+        display: flex;
+        background-color: var(--section-bgg-color2);
+        width: 375px;
+        height: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .flex-container .grøn2{
+        display: flex;
+        background-color: var(--section-bgg-color3);
+        width: 375px;
+        height: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        
+    }
+
+    .flex-container .gul3{
+        display: flex;
+        background-color: #f1c44b;
+        width: 375px;
+        height: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .flex-container .rød4{
+        display: flex;
+        background-color: #f2d5d5;
+        width: 375px;
+        height: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .flex-container .grøn5{
+        display: flex;
+        background-color: #92c2b3;
+        width: 375px;
+        height: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .flex-container .gul6{
+        display: flex;
+        background-color: #f1c44b;
+        width: 375px;
+        height: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .flex-container .rød7{
+        display: flex;
+        background-color: #f2d5d5;
+        width: 375px;
+        height: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .flex-container .blue8{
+        display: flex;
+        background-color: #abc6fd;
+        width: 375px;
+        height: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .flex-container .gul9{
+        display: flex;
+        background-color: #f1c44b;
+        width: 375px;
+        height: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .flex-container .grøn10{
+        display: flex;
+        background-color: #92c2b3;
+        width: 375px;
+        height: 150px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media screen and (min-width: 720px) {
+
+        .flex-container, .blue1, .grøn2, .gul3, .rød4, .grøn5, .gul6, .rød7, .blue8, .gul9, .grøn10{
+            flex-flow: row wrap;
+        }   
+}
