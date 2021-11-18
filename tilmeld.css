@@ -12,7 +12,9 @@ body{
     height: 144px;
     border-radius: 5%;
     text-align: center;
-   padding-top: 50px;
+   padding-top: 30px;
+   color: black;
+
 }
 
 
@@ -45,21 +47,30 @@ body{
     background-color: #A6C6FF;
     border-radius: 5px;
     height: 97px;
-    font-size: 25px;
+    font-size: 16px;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
 .HT{
     background-color: #A6C6FF;
     border-radius: 5px;
     height: 97px;
-    font-size: 25px;
+    font-size: 16px;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
 .ÅT{
     background-color: #A6C6FF;
     border-radius: 5pt;
     height: 97px;
-    font-size: 25px;
+    font-size: 16px;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
 .PM{
@@ -347,6 +358,7 @@ body{
       flex-direction: row;
       width: 100%;
       justify-content: center;
+      margin-top: 5px;
     }
 
     .prices-flex-container > section {
