@@ -54,9 +54,6 @@
   padding: 2rem;
 }
 
-#main-header-ul > li {
-}
-
 #main-header-ul > li > a {
   color: black;
 }
@@ -109,6 +106,7 @@
 main{
     margin-left: 20px;
     margin-right: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2{
@@ -148,6 +146,10 @@ h4{
 
 footer{
   background-color: #f2d5d5;
+    text-align: center;
+    padding: 21px;
+    height: 180px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Kalender - kode fra w3:  https://www.w3schools.com/howto/howto_css_calendar.asp*/
