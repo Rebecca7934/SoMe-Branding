@@ -243,8 +243,8 @@ p {
 
 .kasse {
   background-color: #92C2B3;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: var(--default-page-margin);
+  margin-right: var(--default-page-margin);
   margin-bottom: 5%;
   padding: 12px;
   border-radius: 5px;
@@ -298,6 +298,16 @@ footer {
   .main-header .flex {
     max-width: 900px;
     margin: auto;
+  }
+
+  .main-header .container .resizer,
+  .intro-section,
+  .flex-section,
+  .main-header,
+  .flex-header,
+  .box, .flex, .kasse {
+      max-width: 900px;
+      margin: auto;
   }
 
 }
