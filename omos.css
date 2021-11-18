@@ -294,8 +294,11 @@ footer {
     font-size: 14px;
   }
 
-  .main-header .container .resizer,
-  .main-header .flex {
+  
+  .main-header, .container .resizer,
+  .main-header, .flex,
+  .flex-header,
+  .flex-container {
     max-width: 900px;
     margin: auto;
   }
